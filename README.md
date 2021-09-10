@@ -1,4 +1,4 @@
-Template file for creating FLKT project using https://premake.github.io/.
+Template file for creating FLKT (https://www.fltk.org/)  project using (https://premake.github.io/).
 
 Note: 
 You might need to change some options to make it suitable for you need. 
