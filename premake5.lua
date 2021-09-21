@@ -57,14 +57,12 @@ workspace "yourProjectName"
 		"$(SolutionDir)vender/fltk/"
       }
       filter "configurations:Debug"
-	  links{ 
-            "fltkd.lib",
+        links{ 
             "fltk_imagesd.lib",
+            "fltkd.lib",
             "fltk_jpegd.lib",
             "fltk_pngd.lib",
             "fltk_zd.lib",
-            "fltk_gld.lib",
-            "fltk_formsd.lib",
             "gdiplus.lib",
             "comctl32.lib",
             "ws2_32.lib",
@@ -81,13 +79,12 @@ workspace "yourProjectName"
 			 }
 	
     filter "configurations:Release"
-    	  links{
-            "fltk.lib",
+        links{
+          
             "fltk_images.lib",
+            "fltk.lib",
             "fltk_jpeg.lib",
             "fltk_png.lib",
-            "fltk_gl.lib",
-            "fltk_forms.lib",
             "fltk_z.lib",
             "gdiplus.lib",
             "comctl32.lib",
@@ -109,7 +106,6 @@ workspace "yourProjectName"
      libdirs { "$(SolutionDir)vender/fltk/lib/Release"}
      filter {"system:windows", "action:vs*"}
      
-     
       filter "system:windows"
         cppdialect "C++17"
         staticruntime "On"
@@ -127,7 +123,7 @@ workspace "yourProjectName"
 
        filter { "configurations:Release" }
           defines { "NDEBUG","WIN32","_WINDOWS" }		  
-		  
+          
 		  buildoptions"/MD"
           optimize "On"
 
